@@ -43,21 +43,6 @@ fig_genre.update_layout(
 )
 
 # Graphique 2 : Top 10 genres par nombre d’évaluations et note moyenne
-"""top10_genre_stats = genre_rating_stats.sort_values("rating_count", ascending=False).head(10)
-fig_genre_rating = px.bar(
-    top10_genre_stats,
-    x="rating_count",
-    y="genre",
-    orientation="h",
-    color="avg_rating",
-    color_continuous_scale="viridis",
-    title="Top 10 genres par nombre d’évaluations et note moyenne",
-    labels={"genre": "Genre", "rating_count": "Nombre d'évaluations", "avg_rating": "Note moyenne"}
-)
-fig_genre_rating.update_layout(
-    yaxis={'categoryorder': 'total ascending'},
-    height=350
-)"""
 
 
 
