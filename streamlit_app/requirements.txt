@@ -2,9 +2,8 @@ pandas==2.3.1
 plotly-express==0.4.1
 sdkForMovies==0.0.2
 streamlit==1.48.1
-libtcl8.6
-libtk8.6
 tkinter
 tk8.6
 tcl8.6
-
+tk
+tcl
