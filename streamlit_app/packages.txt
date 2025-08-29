@@ -1,2 +1,5 @@
 libtcl8.6
 libtk8.6
+tkinter
+tk8.6
+tcl8.6
