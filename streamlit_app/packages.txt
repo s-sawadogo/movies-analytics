@@ -1,1 +1,2 @@
-libtk8.6.so
+libtcl8.6
+libtk8.6
