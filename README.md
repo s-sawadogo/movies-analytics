@@ -42,44 +42,40 @@
 
 ### Un outil central pour le Data Analyst
 
-Durant la phase 2, vous utiliserez Jupyter Notebook pour :
+Durant la phase 2, nous utiliserons Jupyter Notebook pour :
 
-- Charger et explorer les données extraites via votre SDK (et donc indirectement via l’API).
+- Charger et explorer les données extraites via notre SDK (et donc indirectement via l’API).
 - Réaliser une **analyse exploratoire** complète : tendances, corrélations, genres populaires...
 - Visualiser les résultats sous forme de **graphiques** compréhensibles et exploitables.
-- Créer un **notebook professionnel** que vous pourrez intégrer dans votre portfolio.
-
----
-
-Parfait, voici une version retravaillée de la section **Installation rapide** (renommée en **⚙️ Mise en place de l’environnement d’analyse**), adaptée au contexte de la formation, en précisant que l’on travaille avec **VSCode**, un environnement virtuel Python, et un dépôt GitHub :
+- Créer un **notebook professionnel** que nous pourrons intégrer dans notre portfolio.
 
 ---
 
 ## Mise en place de l’environnement d’analyse
 
-Dans cette formation, nous utilisons **VSCode** comme éditeur principal et organisons chaque phase dans un répertoire Git dédié. Pour cette phase 2 (*Data Analyst – Exploration & Visualisation*), tu vas travailler dans un nouveau projet nommé par exemple `movielens-analytics` (tu crées ton propre répertoire GitHub et tu lui donnes le nom que tu veux)
+Nous utiliserons **VSCode** comme éditeur principal et organisons chaque phase dans un répertoire Git dédié. Pour cette phase 2 (*Data Analyst – Exploration & Visualisation*), on va travailler dans un nouveau projet nommé  `movies-analytics`.
 
 Voici les étapes pour bien démarrer :
 
 ### 1. Cloner le dépôt GitHub du projet
 
-Si ce n’est pas encore fait, commence par cloner le dépôt Git que tu as créé pour cette phase :
+On commence par cloner le dépôt Git créé :
 
 ```bash
-git clone https://github.com/s-sawadogo/movielens-analytics.git
-cd movielens-analytics
+git clone https://github.com/s-sawadogo/movies-analytics.git
+cd movies-analytics
 ```
 
 ### 2. Créer et activer un environnement virtuel
 
-Ensuite, configure un environnement Python isolé pour gérer les dépendances :
+Ensuite, on configure un environnement Python isolé pour gérer les dépendances :
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-> Si tu es sur Windows, utilise :  
+> Sur Windows, utiliser :  
 > `.\.venv\Scripts\activate`
 
 ### 3. Ouvrir le projet dans VSCode
@@ -88,41 +84,25 @@ source .venv/bin/activate
 code .
 ```
 
-Si tu reçois une notification *"Sélectionner l'interpréteur Python"*, choisis l’interpréteur correspondant à ton environnement `.venv`.
+Si une notification *"Sélectionner l'interpréteur Python"* apparait, choisir l’interpréteur correspondant à son environnement `.venv`.
 
-### 4. Créer un dossier pour ton notebook
+### 4. Installer le SDK `sdkForMovies`
 
-Organise tes fichiers en créant un dossier dédié à l’analyse :
-
-```bash
-mkdir dataanalysis
-touch dataanalysis/movie_data_analysis.ipynb
-```
-
-### 5. Installer le SDK `moviesdk`
-
-Ce SDK te permettra d’interagir avec l’API MovieLens. Installe-le dans ton environnement :
+Ce SDK permettra d’interagir avec l’API MovieLens. On l'installe dans notre environnement :
 
 ```bash
-pip install moviesdk
+pip install sdkForMovies
 ```
 
-### 6. Lancer et configurer le Jupyter Notebook
+### 5. Lancer et configurer le Jupyter Notebook
 
-Ouvre ton fichier `.ipynb` dans VSCode. Lorsque tu exécutes ta **première cellule**, si Jupyter n’est pas encore installé, VSCode te proposera automatiquement de l’installer (avec `ipykernel`). Accepte pour que tout soit configuré automatiquement.
-
----
-
-**Ton environnement est prêt !**
-
-Tu peux maintenant démarrer ton **analyse exploratoire interactive** directement dans le fichier `movie_data_analysis.ipynb`.  
-On va explorer les films, les notes, les genres... et visualiser tout ça avec des graphiques dynamiques !
+Ouvre le fichier `.ipynb` dans VSCode. Lorsqu'on exécutes la **première cellule**, si Jupyter n’est pas encore installé, VSCode proposera automatiquement de l’installer (avec `ipykernel`). On accepte alors our que tout soit configuré automatiquement.
 
 ---
 
 ## Familiarisation avec l'API dans un notebook 
 
-Voir Fichier `dataanalysis/movie_data_analysis.ipynb` 
+Voir le fichier `film_data_analysis.ipynb` 
 
 ## Visualisation des données
 
@@ -142,7 +122,7 @@ Voici quelques caractéristiques principales de Streamlit :
 
 C'est donc un outil idéal pour prototyper des applications de data science rapidement et les déployer de manière simple.
 
-Pour utiliser *streamlit*, vous devez préalablement l'installer :
+Pour utiliser *streamlit*, on doit préalablement l'installer :
 
 ```bash
 pip install streamlit
@@ -153,7 +133,6 @@ Notre application Streamlit comprendra un fichier de point d'entrée, le fichier
 Exécutez ces commandes à partir du répertoire racine de votre projet :
 
 ```bash
-cd dataanalysis
 mkdir streamlit_app
 cd streamlit_app
 touch movielens_app.py
@@ -162,11 +141,11 @@ touch page2.py
 touch page3.py
 ```
 
-Codes complet de l'application : voir dossier `dataanalysis/streamlit_app`
+Pour voir le code complet de l'application : voir le dossier `streamlit_app`
 
 ---
 
-Pour afficher le lien direct vers la page IMDb d'un film ainsi aue son image d'affiche, vous avez besoin d'un clé API OMDb.
+Pour afficher le lien direct vers la page IMDb d'un film ainsi que son image d'affiche, vous avez besoin d'un clé API OMDb.
 
 1. Allez sur [http://www.omdbapi.com/apikey.aspx](http://www.omdbapi.com/apikey.aspx)
 2. Demandez une **clé gratuite (Personal Use Only)**
