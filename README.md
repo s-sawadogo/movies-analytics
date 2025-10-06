@@ -22,32 +22,13 @@
 
 ---
 
-## Présentation de Jupyter Notebook
+## Démonstration de l'interface streamlit
 
-**Jupyter Notebook** est un environnement interactif très populaire dans le monde de la **Data Science**. Il permet d’écrire du code Python, de visualiser des graphiques, d’insérer des textes explicatifs (en Markdown), et de documenter une analyse de données de manière fluide et lisible.
 
----
+![](assets/Movies_App_1.gif)
 
-### Pourquoi Jupyter Notebook est si populaire ?
+![](assets/Movies_App_2.gif)
 
-🔹 **Interactivité totale** : Chaque cellule de code peut être exécutée indépendamment, ce qui permet d’explorer les données pas à pas.
-
-🔹 **Documentation intégrée** : On peut facilement alterner entre du code Python et des explications en langage naturel (Markdown), ce qui en fait un excellent outil pédagogique et professionnel.
-
-🔹 **Visualisation immédiate** : Les bibliothèques comme `matplotlib`, `seaborn` ou `plotly` s’intègrent parfaitement à Jupyter pour créer des visualisations dynamiques.
-
-🔹 **Support riche** : Intègre du HTML, des tableaux interactifs, des widgets, etc. Parfait pour présenter un projet à un client ou à une équipe.
-
----
-
-### Un outil central pour le Data Analyst
-
-Durant la phase 2, nous utiliserons Jupyter Notebook pour :
-
-- Charger et explorer les données extraites via notre SDK (et donc indirectement via l’API).
-- Réaliser une **analyse exploratoire** complète : tendances, corrélations, genres populaires...
-- Visualiser les résultats sous forme de **graphiques** compréhensibles et exploitables.
-- Créer un **notebook professionnel** que nous pourrons intégrer dans notre portfolio.
 
 ---
 
